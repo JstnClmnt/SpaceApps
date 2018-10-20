@@ -11,6 +11,12 @@
 <!DOCTYPE html>
 <head>
 	<?php
+		$target_dir = "";
+		$target_file = $target_dir . basename("data.csv");
+		$fileType = pathinfo($target_file,PATHINFO_EXTENSION);
+		move_uploaded_file($_FILES["filename"]["tmp_name"], $target_file);
+		$OUTPUT=shell_exec("py ../predict.py");
+		echo $OUTPUT;
 		initialize_header();
 		initialize_navm();
 	?>
