@@ -14,8 +14,8 @@ from sklearn import metrics
 import pickle
 
 #load data
-filename = 'finalized_model.sav'
-newsample=pd.read_csv('planets-2.csv')
+filename = '../finalized_model.sav'
+newsample=pd.read_csv('data.csv')
 newsample=newsample.dropna()
 newsample=newsample.reset_index()
 newsample
@@ -30,6 +30,8 @@ newsample["Probability of Not Habitable"]=results[0]
 newsample['Probability of Habitable']=results[1]
 predictresult=loaded_model.predict(normsampledata)
 newsample["Results"]=predictresult
-
+newsample.drop(newsample.columns[[0, 1]], axis=1, inplace=True)
+newsample=newsample.rename(index=str, columns={"pl_orbper": "Orbital Period[days]", "pl_ratror": " Planet-Star Radius Ratio","st_dens": "Fitted Stellar Density [g/cm**3]", "pl_rade": "Planetary Radius [Earth radii]","pl_orbsmax": "Orbit Semi-Major Axis [AU]", "pl_eqt": "Equilibrium Temperature [K]","pl_insol": "Insolation Flux [Earth flux]", "pl_ratdor": "Planet-Star Distance over Star Radius","pl_pnum":"Number of Planets","st_teff":"Stellar Effective Temperature [K]","st_logg":"Stellar Surface Gravity [log10(cm/s**2)]","st_metfe":"Stellar Metallicity [dex]","st_rad":"Stellar Radius [Solar radii]","st_mass":"Stellar Mass [Solar mass]"})
 #print newdata with classified
 newsample.to_csv('results.csv')
+print("Succesful")
