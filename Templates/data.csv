@@ -1,3 +1,26 @@
+# This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu
+# Sat Oct 20 06:32:10 2018
+#
+# CONSTRAINT:  where (pl_disc = 2018
+# CONSTRAINT:  )
+#
+# COLUMN pl_hostname:    Host Name
+# COLUMN pl_name:        Planet Name
+# COLUMN pl_pnum:        Number of Planets in System
+# COLUMN pl_orbper:      Orbital Period [days]
+# COLUMN pl_orbsmax:     Orbit Semi-Major Axis [AU])
+# COLUMN st_teff:        Effective Temperature [K]
+# COLUMN st_mass:        Stellar Mass [Solar mass]
+# COLUMN st_rad:         Stellar Radius [Solar radii]
+# COLUMN pl_eqt:         Equilibrium Temperature [K]
+# COLUMN pl_insol:       Insolation Flux [Earth flux]
+# COLUMN pl_rade:        Planet Radius [Earth radii]
+# COLUMN pl_ratdor:      Ratio of Distance to Stellar Radius
+# COLUMN pl_ratror:      Ratio of Planet to Stellar Radius
+# COLUMN st_logg:        Stellar Surface Gravity [log10(cm/s**2)]
+# COLUMN st_dens:        Stellar Density [g/cm**3]
+# COLUMN st_metfe:       Stellar Metallicity [dex]
+#
 loc_rowid,pl_hostname,pl_name,pl_pnum,pl_orbper,pl_orbsmax,st_teff,st_mass,st_rad,pl_eqt,pl_insol,pl_rade,pl_ratdor,pl_ratror,st_logg,st_dens,st_metfe
 8,24 Boo,24 Boo b,1,30.35060000,0.190000,4893.00,0.99,10.64,,,,,,2.42,,-0.770
 51,BD+48 740,BD+48 740 b,1,733.00000000,1.700000,4534.00,1.09,10.33,,,,,,2.48,,-0.130
