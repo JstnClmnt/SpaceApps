@@ -18,11 +18,11 @@ Our entry focuses on creating a web application that detects habitable exoplanet
 
 ## Contributors
 #### From the University of Santo Tomas
-* Christian Justine G. Clemente
-* John Albert P. Luz
-* Gabriel Hansley C. Suarez
-* James Karol B. Sangalang
-* Angela Clarisse C. Chua
+* [Christian Justine G. Clemente](https://www.facebook.com/justine.clemente)
+* [John Albert P. Luz](https://www.facebook.com/johnthisisnotmyemail)
+* [Gabriel Hansley C. Suarez](https://www.facebook.com/GabbieEz)
+* [James Karol B. Sangalang](https://www.facebook.com/jameskarol.sangalang)
+* [Angela Clarisse C. Chua](https://www.facebook.com/AngelaClarisseChua)
 
 ## References
 * [NASA Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/ "NASA Exoplanet Archive")
