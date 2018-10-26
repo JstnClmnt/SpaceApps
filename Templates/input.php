@@ -18,7 +18,7 @@
 	<section class='section'>
 		<div class='mid-container'>
 			<div class='section-title'>
-				<font>Data Input</font>
+				<font>Data Input</font><hr class='small'>
 			</div>
 			<?php userInp(); ?>
 		</div>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Our New Home | Contributions</title>
+	<link rel='stylesheet' href='css/style.css'>
+	<link rel='stylesheet' href='css/bootstrap.css'>
+	<link rel='icon' type='image/x-icon' href='img/tab-logo.png'>
+	<script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+	<script src='js/smoothscroll.js'></script>
+	<script>
+	$(document).ready(function(){
+		  $('a').on('click', function(event) {
+		    if (this.hash !== '') {
+		      event.preventDefault();
+		      var hash = this.hash;
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		        window.location.hash = hash;
+		      });
+		    }
+		  });
+		});
+	</script>
+</head>
+<body>
+		<h3>How do I make a contribution?</h3>
+		<p style='margin-left:20px;'>Never made an open source contribution before? Wondering how contributions work in the in our project? Here's a quick rundown!
+			<ol>
+				<li>Find an issue that you are interested in addressing or a feature that you would like to add.</li>
+				<li>Fork the repository associated with the issue to your local GitHub organization. This means that you will have a copy of the repository under your Github.</li>
+				<li>Clone the repository to your local machine using git clone <a class='negA' href='https://github.com/JstnClmnt/SpaceApps'>https://github.com/JstnClmnt/SpaceApps</a>.</li>
+				<li>Create a new branch for your fix using git checkout -b branch-name-here.</li>
+				<li>Make the appropriate changes for the issue you are trying to address or the feature that you want to add.</li>
+				<li>Use git add insert-paths-of-changed-files-here to add the file contents of the changed files to the \"snapshot\" git uses to manage the state of the project (index).</li>
+				<li>Use git commit -m \"Insert a short message of the changes made here\" to store the contents of the index with a descriptive message.</li>
+				<li>Push the changes to the remote repository using git push origin branch-name-here.</li>
+				<li>Submit a pull request to the upstream repository.</li>
+				<li>Title the pull request with a short description of the changes made and the issue or bug number associated with the change.</li>
+				<li>In the description of the pull request, explain the changes that you made, any issues you think exist with the pull request you made, and any questions you have for the maintainer. It's OK if your pull request is not perfect (no pull request), the reviewer will be able to help you fix any problems and improve it!</li>
+				<li>Wait for the pull request to be reviewed by a maintainer. (and make changes to the pull request if the reviewing maintainer recommends them)</li>
+				<li>Celebrate your success after your pull request is merged!</li>
+			</ol>
+		</p>
+		<br><hr class='p_separator'><br>
+		<h3>Where can I go for help?</h3>
+		<p style='margin-left:20px;'>If you need help, you can ask questions on our mailing list, private messages through facebook, or [other communication platforms].</p>
+		<br><hr class='p_separator'><br>
+		<h3>What does the Code of Conduct mean for me?</h3>
+		<p style='margin-left:20px;'>Our Code of Conduct means that you are responsible for treating everyone on the project with respect and courtesy regardless of their identity. If you are the victim of any inappropriate behavior or comments as described in our Code of Conduct, we are here for you and will do the best to ensure that the abuser is reprimanded appropriately, per our code.</p></article>
+	</body>
+	</html>

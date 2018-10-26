@@ -16,7 +16,7 @@
 
 		echo "<section id='last' class='section'>";
 		echo "	<div class='section-title'>";
-		echo "		<font>Contact Us</font>";
+		echo "		<font>Contact Us</font><hr class='small'>";
 		echo "	</div>";
 		echo "	<div class='row'>";
 		echo "		<div class='col-lg-4'>";

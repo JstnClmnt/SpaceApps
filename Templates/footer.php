@@ -1,4 +1,5 @@
 <?php
+
 function initialize_footer(){
 
 	global $company_contacts, $company_contacts_social, $copyright;
@@ -31,6 +32,14 @@ function initialize_footer(){
 	echo "	</div>";
 	echo "</div>";
 	echo "</body>";
+	echo "<script>$(window).scroll(function() {
+  			if ($(document).scrollTop() > 50) {
+    			$('nav').addClass('shrink-nav');
+  			}
+  			else {
+    			$('nav').removeClass('shrink-nav');
+    		}
+    	});</script>";
 	echo "<script src='https://unpkg.com/popper.js/dist/umd/popper.min.js'></script>";
 	echo "<script src='js/bootstrap.js'></script>";
 	echo "<script src='js/bootstrap.min.js'></script>";

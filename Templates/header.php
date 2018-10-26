@@ -1,6 +1,6 @@
 <?php
 	function initialize_header() {
-		echo "<title>Template 1</title>";
+		echo "<title>Our New Home</title>";
 		echo "<link rel='stylesheet' href='css/style.css'>";
 		echo "<link rel='stylesheet' href='css/bootstrap.css'>";
 		echo "<link rel='icon' type='image/x-icon' href='img/tab-logo.png'>";

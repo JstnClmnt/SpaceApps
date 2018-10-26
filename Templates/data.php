@@ -23,6 +23,7 @@
 		<section id="table" class="section">
 			<div class='section-title'>
 				<font>Find our next home!</font>
+				<hr class='small'>
 			</div>
 			<center>
 				<!--<script src="sort_table.js"></script>-->
@@ -39,14 +40,14 @@
 	<?php
 		function readCSV($filename, $header=true) {
 			$handle = fopen($filename, "r");
-	//display header row if true
+		//display header row if true
 		if ($header) {
 			$csvcontents = fgetcsv($handle);
-			echo "<tr style='background-color:#333'>";
+			echo "<thead><tr style='background-color:#333'>";
 			foreach ($csvcontents as $headercolumn) {
 				echo "<th style='color:white;'>$headercolumn</th>";
 			}
-			echo '</tr>';
+			echo '</tr></thead>';
 		}
 		// displaying contents
 		while ($csvcontents = fgetcsv($handle)) {

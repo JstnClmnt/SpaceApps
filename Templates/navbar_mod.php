@@ -5,7 +5,7 @@
 		$navtabs_direct = array("index.php", "input.php");
 
 		echo "<nav class='navbar navbar-expand-lg bg-default'>";
-		echo "	<a class='navbar-brand title' href='#banner'>Our New Home</a>";
+		echo "	<a class='navbar-brand title' href='index.php'>Our New Home</a>";
 		echo "	<button id='btn-toggle' class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>";
 		echo "		<span class='navbar-toggler-icon'></span>";
 		echo "	</button>";
